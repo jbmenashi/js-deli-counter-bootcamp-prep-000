@@ -1,6 +1,6 @@
-function takeANumber(line,newPerson) {
- line.push(newPerson);
- return `Welcome, ${newPerson}. You are number ${line.length} in line.`;
+function takeANumber(line) {
+ line.push(line.length + 1);
+ return line.length;
 }
 
 function nowServing(line) {
@@ -18,9 +18,7 @@ function currentLine(line) {
   }
   else {
     let lineAddition = [];
-    for (let i = 0; i < line.length; i++){
-      lineAddition.push(` ${i+1}. ${line[i]}`);
-    }
-    return 'The line is currently:' + lineAddition;
+      lineAddition.push(${line[i]});
+    return 'The line is currently:' + line;
   }
 }
