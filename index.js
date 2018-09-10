@@ -17,8 +17,6 @@ function currentLine(line) {
     return 'The line is currently empty.'
   }
   else {
-    let lineAddition = [];
-      lineAddition.push(${line[i]});
     return 'The line is currently:' + line;
   }
 }
